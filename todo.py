@@ -15,6 +15,9 @@ class ToDoList:
 
     def remove_task(self, task_number):
         # 未実装：指定されたタスクをリストから削除する機能
+        for i in range(task_number, len(self.task)-1):
+            self.task[i] = self.task[i+1]
+        del self.task[len(self.task)]
         pass
 
     def complete_task(self, task_number):
