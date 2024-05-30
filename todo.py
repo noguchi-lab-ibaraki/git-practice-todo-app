@@ -12,7 +12,7 @@ class ToDoList:
             with open(self.filename, "r") as file:
                 self.tasks = json.load(file)
         except FileNotFoundError:
-            pass
+            self.tasks = []
 
     def save_tasks(self):
         with open(self.filename, "w") as file:
