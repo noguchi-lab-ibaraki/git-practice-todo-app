@@ -6,7 +6,7 @@ class ToDoList:
         self.tasks = []
 
     def add_task(self, task):
-
+        self.tasks.append(task)
         pass
 
     def list_tasks(self):
