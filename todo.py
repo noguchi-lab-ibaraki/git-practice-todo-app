@@ -22,6 +22,7 @@ class ToDoList:
         #リストに追加
         self.tasks.append(task)
         # 未実装：タスクをリストに追加する機能
+        self.tasks.append(task)
         self.save_tasks()
         pass
 
