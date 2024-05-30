@@ -19,6 +19,8 @@ class ToDoList:
             json.dump(self.tasks, file)
 
     def add_task(self, task):
+        #リストに追加
+        self.tasks.append(task)
         # 未実装：タスクをリストに追加する機能
         self.save_tasks()
         pass
