@@ -32,8 +32,12 @@ class ToDoList:
 
     def remove_task(self, task_number):
         # 未実装：指定されたタスクをリストから削除する機能
+        if task_number < 0 or task_number >= len(self.tasks):
+            print("This is invaild index")
+        else:
+            del self.tasks[task_number]
+
         self.save_tasks()
-        pass
 
     def complete_task(self, task_number):
         # 未実装：指定されたタスクを完了済みとしてマークする機能
