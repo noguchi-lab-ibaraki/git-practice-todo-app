@@ -8,7 +8,7 @@ class ToDoList:
     def add_task(self, task):
         # 未実装：タスクをリストに追加する機能
         self.tasks.append(task)
-        pass
+
 
     def list_tasks(self):
         # 未実装：リスト内のタスクを表示する機能
